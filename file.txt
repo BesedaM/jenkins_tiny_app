@@ -1,2 +1,5 @@
-kijkjl
-jfkjj
+Как делать этот таск:
+1. нужно открыть для внешней сети Jenkins (можно используя ngrok)
+2. Создать на GitHub webhook, используя адрес, предоставленный ngrok + /github-webhook/  (https://d448f7b67283.ngrok.io/github-webhook/)
+3. В Manage Jenkins -> Configure System -> GitHub -> Override Hook URL вводим адрес webhook (https://d448f7b67283.ngrok.io/github-webhook/)
+4. В настройках job'ы указываем url GitHub проекта в разделе General и SCM
